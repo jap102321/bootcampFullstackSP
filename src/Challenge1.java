@@ -1,14 +1,35 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Challenge1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int i=9;
         AleatoryString ale = new AleatoryString();
 
-        System.out.println("Please type in the type of data that you want: A & B");
+        System.out.print("Please type in the type of data that you want (A & B): ");
         String type = sc.next();
         System.out.println(ale.generateNumber(type));
+
+
+
+        //
+        List<String> data;
+        data = new ArrayList<>();
+        data.add("PERÚ");
+        data.add("PERU");
+        data.add("BOLIVIA");
+        data.add("CHILE");
+        data.add("ARGENTINA");
+        data.add("PARAGUAY");
+        data.add("URUGUAY");
+        data.add("BRASIL");
+        data.add("MÉXICO");
+        data.add("MEXICO");
+
+
+        System.out.print("Give me the name of a wine producer country from latinamerica: ");
+        String dataPos = sc.next();
+        System.out.println(data.contains(dataPos.toUpperCase()));
+
     }
 }
 
@@ -52,3 +73,4 @@ class AleatoryString {
         return builder.toString();
     }
 }
+
