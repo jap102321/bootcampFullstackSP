@@ -9,13 +9,13 @@ public class Challenge1 {
 
 
 
-        System.out.print("How many new lines do you want to generate and add to " +
+        System.out.print("How many new lines do you want to generate and add to " +             //Choose how many new lines there'll be
                 "the database: ");
         int newLines = sc.nextInt();
 
         String [] linesData = new String[newLines];
 
-        for(int i = 0 ; i < newLines; i++){
+        for(int i = 0 ; i < newLines; i++){                                                     //Iterate and add new lines to the internal DB
             System.out.print("Please type in the type of data that you want (A & B): ");
             String type = sc.next();
             linesData[i]=ale.generateNumber(type);
@@ -58,7 +58,7 @@ class AleatoryString {
                 int pos = (int) Random;
                 char letter = bank.charAt(pos);
                 builder = builder.append(letter);
-            }
+            }                                                                                                       //Generation of new aleatory number
         } else if (typeOf.equalsIgnoreCase("B")) {
             aleatory = "08";
             builder = builder.append(aleatory);
@@ -69,7 +69,7 @@ class AleatoryString {
                 builder = builder.append(letter);
             }
         }else{
-            return "You didn't indicate the right type of n°";
+            return "You didn't indicate the right type of line";
         }
         return builder.toString();
     }
@@ -79,7 +79,7 @@ class AleatoryString {
 class LineDatabase{
     private String aleatory,numberInDB;
     private ArrayList<String> line = new ArrayList<>();
-
+                                                                                        //Adding number to the DB
     public boolean getInfoDB(String numberInDB){
         if(line.contains(numberInDB)){
             return false;
