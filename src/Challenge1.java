@@ -6,6 +6,7 @@ public class Challenge1 {
         Scanner sc = new Scanner(System.in);
         AleatoryString ale = new AleatoryString();
         LineDatabase ld = new LineDatabase();
+        List <String> db = new ArrayList<>();
 
 
 
@@ -13,21 +14,20 @@ public class Challenge1 {
                 "the database: ");
         int newLines = sc.nextInt();
 
-        String [] linesData = new String[newLines];
+
 
         for(int i = 0 ; i < newLines; i++){                                                     //Iterate and add new lines to the internal DB
             System.out.print("Please type in the type of data that you want (A & B): ");
             String type = sc.next();
-            linesData[i]=ale.generateNumber(type);
-            ld.addLineToDatabase(linesData[i]);
-            System.out.println(linesData[i]);
+            db.add(ale.generateNumber(type));
+            System.out.println(db.get(i));
         }
 
 
-        System.out.println("The numbers in the DB are " + Arrays.toString(linesData));
+        System.out.println("The numbers in the DB are " + db);
         System.out.print("Check is a number is available: ");
         String numberInDB= sc.next();
-        System.out.println(ld.getInfoDB(numberInDB));
+        System.out.println(ld.getInfoDB(numberInDB, db));
 
 
 
@@ -50,48 +50,41 @@ class AleatoryString {
         StringBuilder builder;
         builder = new StringBuilder(longitud);
 
-        if (typeOf.equalsIgnoreCase("A")) {
-            aleatory = "54";
-            builder = builder.append(aleatory);
-            for (int x = 0; x < longitud; x++) {
-                double Random = Math.random() * bank.length();
-                int pos = (int) Random;
-                char letter = bank.charAt(pos);
-                builder = builder.append(letter);
-            }                                                                                                       //Generation of new aleatory number
-        } else if (typeOf.equalsIgnoreCase("B")) {
-            aleatory = "08";
-            builder = builder.append(aleatory);
-            for (int x = 0; x < longitud; x++) {
-                double Random = Math.random() * bank.length();
-                int pos = (int) Random;
-                char letter = bank.charAt(pos);
-                builder = builder.append(letter);
-            }
-        }else{
-            return "You didn't indicate the right type of line";
+        if(typeOf.equalsIgnoreCase("a")){
+            this.aleatory="54";
+            builder.append(aleatory);
+        }else if (typeOf.equalsIgnoreCase("b")) {
+            this.aleatory="08";
+            builder.append(aleatory);
         }
-        return builder.toString();
+
+        for (int x = 0; x < longitud; x++) {
+            double Random = Math.random() * bank.length();
+            int pos = (int) Random;
+            char letter = bank.charAt(pos);
+            builder.append(letter);
+        }
+         return builder.toString();
     }
 
 }
 
+       /* for (int x = 0; x < longitud; x++) {
+        double Random = Math.random() * bank.length();
+        int pos = (int) Random;
+        char letter = bank.charAt(pos);
+        builder = builder.append(letter); */
+
 class LineDatabase{
     private String aleatory,numberInDB;
-    private ArrayList<String> line = new ArrayList<>();
                                                                                         //Adding number to the DB
-    public boolean getInfoDB(String numberInDB){
-        if(line.contains(numberInDB)){
+    public boolean getInfoDB(String numberInDB, List<String> list){
+        if(list.contains(numberInDB)){
             return false;
         }
-
         return true;
     }
-    public void addLineToDatabase(String aleatory){
-        this.numberInDB=aleatory;
-        line.add(aleatory);
 
-    }
 
 }
 
