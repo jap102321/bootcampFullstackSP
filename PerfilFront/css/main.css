@@ -1,0 +1,11 @@
+.wrapperProject{
+  max-inline-size: 1210px;
+  margin: auto;
+}
+
+
+@media screen and (max-width:820px){
+  .wrapperProject{
+    inline-size: auto;
+  }
+}

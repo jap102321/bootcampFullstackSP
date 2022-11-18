@@ -1,0 +1,40 @@
+.navbar{
+  display: inline-flex;
+  inline-size: 100%;
+  background-color:var(--blueAbt);
+  font-size: 20px;
+}
+.navbar-brand img{
+  inline-size: 32px;
+
+}
+.navbar a,ul,li{
+  color: white;
+}
+
+.nav-link.active{
+  color: aqua;
+}
+
+.dropdown-menu.show{
+  background-color: var(--blueAbt);
+}
+
+
+
+
+
+@media screen and (max-width:992px) {
+  .navbar{
+    display: flex;
+
+  }
+}
+
+@media screen and (min-width:992px){
+  .navbar.navbar-expand-lg{
+    display: none;
+  }
+}
+
+

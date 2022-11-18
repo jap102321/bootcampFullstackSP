@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Portfolio Juan González</title>
+</head>
+<body class="body">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logos/ordenador-portatil.png" alt="Logo Juan">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whoIAm">¿Quién soy?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#socialmedia">Dónde contactarme</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+   <main class="wrapperProject">
+     <div class="aboutme" id="aboutme">
+       <div class="contentAboutMe">
+         <div class="abtMeText">
+         <div class="abtmeTitle">
+             <h1>
+              Soy Juan Pablo González
+             </h1>
+             <h2>Trainee Engineer</h2>
+           </div>
+           <div class="abtMeDescription">
+            <span>Soy una persona que está en constante actualización y es muy apasionada
+             por lo que hace, así mismo me considero un buen lider y alguien que sabe
+             trabajar en equipo para poder lograr un objetivo en común.<br>
+              <br>
+             Está página fue diseñada con Bootstrap, HTML, CSS3 (flexbox, grid) :)!
+             </span><br>
+              <div class="buttonsAbtMe">
+                <div class="buttonDiv" >
+                  <a href="https://www.linkedin.com/in/juan-pablo-gonzalez-aa426620a/"><button class="button" id="linkedin"><i class="icon-linkedin"></i><span>LinkedIn</span></button></a>
+                </div>
+                <div class="buttonDiv" >
+                  <a href="https://github.com/jap102321"><button class="button" id="gitHub"><i class="icon-github"></i><span> GitHub</span></button></a>
+                </div>
+                <div class="buttonDiv">
+                    <a href="#contentMyself"><button class="button" id="abtme">Más de mi</button></a>
+                </div>
+              </div>
+           </div>
+
+         </div>
+         <div class="imageAbt">
+           <img src="./images/avatar2.png" alt="Avatar">
+         </div>
+       </div>
+     </div>
+
+      <div class="project-title">
+        <h2>Algunos de mis proyectos</h2>
+      </div>
+
+      <div class="projects" >
+        <div class="project-inside" id="projects">
+          <div class="project">
+            <img src="./images/proyectos/huddle.png" alt="HuddleProject" class="project-img">
+          </div>
+
+          <div class="project">
+              <img src="./images/proyectos/port.png" alt="portProject" class="project-img">
+          </div>
+
+          <div class="project">
+              <img src="./images/proyectos/jaume.png" alt="JaumeProject" class="project-img">
+          </div>
+          <div class="project">
+            <img src="./images/proyectos/calendar.png" alt="calendarProject" class="project-img">
+          </div>
+        </div>
+
+        <div class="btn-slider right" id="btn-right">
+         <span>&#62;</span>
+        </div>
+        <div class="btn-slider left" id="btn-left">
+          <span>&#60;</span>
+        </div>
+      </div>
+
+      <div class="tech">
+        <div class="techTitle">
+          <h2>¿Qué lenguajes uso?</h2>
+        </div>
+        <div class="techInside">
+          <div class="techProgram">
+            <img src="./images/logos/html.png" id="html" alt="HTML">
+            <span>HTML </span>
+          </div>
+          <div class="techProgram">
+            <img src="./images/logos/css.png" id="css" alt="CSS">
+            <span>CSS</span>
+          </div>
+          <div class="techProgram">
+            <img src="./images/logos/bootstrap.png" id="bootstrap" alt="Bootstrap">
+            <span>Bootstrap</span>
+          </div>
+          <div class="techProgram">
+            <img src="./images/logos/java.png" id="java" alt="Java">
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+      <div class="sobreMi" id="whoIAm">
+        <div class="myself">
+          <div class="titleMyself">
+            <h2>¿Quien soy?</h2>
+          </div>
+          <div class="contentMyself">
+            <span>Mi nombre es Juan Pablo, tengo 18 años y soy un apasionado a la Programación y el Web Design. Actualmente, me encuentro
+            estudiando con un bootcamp de sophos y espero que con estas muestras de mi trabajo pueda convencerte de tenerme en cuenta
+            para tus proyectos y ayudarte a plasmar tus sueños a futuro!</span><br>
+            <br>
+            <span>Ahora mismo tengo conocimiento y dominancia en HTML, CSS, conocimiento básico
+              en los demás lenguajes que están arriba. Además, estoy muy interesado en adquirir y
+            profundizar mis conocimientos en NodeJS y Django.</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  <footer class="footer" >
+    <div class="social-media" id="socialmedia">
+      <a href="https://www.instagram.com/toobrxketocare/?hl=es-la"><i class="icon-instagram" ></i></a>
+      <a href="https://github.com/jap102321"><i class="icon-github" ></i></a>
+      <a href="https://www.linkedin.com/in/juan-pablo-gonzalez-aa426620a/" ><i class="icon-linkedin"></i></a>
+      <a href="#aboutme"><span>Back to top</span></a>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="./javascript/index.js"></script>
+  <script src="./javascript/"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,74 @@
+.project-title{
+  text-align: center;
+}
+
+.projects{
+
+  inline-size: 90%;
+  max-inline-size: 900px;
+  overflow:hidden;
+  margin: auto;
+  position: relative;
+}
+
+.project-inside{
+  display: flex;
+  inline-size: 400%;
+  height: 400px;
+}
+
+.project{
+  inline-size: 100%;
+}
+
+.project-img{
+
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: fill;
+}
+
+
+.btn-slider{
+position: absolute;
+inline-size: 40px;
+block-size: 40px;
+background: #000;
+opacity: 60%;
+border-radius: 50%;
+top: 50%;
+transform: translateY(-50%);
+font-size: 30px;
+font-weight:bold;
+cursor: pointer;
+}
+
+.btn-slider.left{
+text-align: center;
+left: 5px;
+}
+
+.btn-slider.right{
+  text-align: center;
+  right: 5px;
+}
+
+.btn-slider span{
+  display: flex;
+  justify-content: center;
+  transform: translateY(40%);
+
+}
+
+
+
+@media screen and (max-width:900px){
+
+
+}
+
+
+/* El container slider es equivalente a projects,
+slider es equivalente a project-inside,slider-section es igual a project
+slider__img igual a project-img */

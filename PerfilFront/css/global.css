@@ -1,0 +1,29 @@
+:root {
+  --blueMain: #263762;
+  --blueAbt: #142B58;
+  --blueFoot: #0C1B52;
+  --blueButton:#3255AD;
+  --purple:#3D1C7A;
+  --purpleShadow:#641A91;
+  --white: white;
+  --body1-regular: 400 0.875rem/1.25rem Roboto;
+  --body1-medium: 500 0.875rem/1.25rem Roboto;
+  /* --body1-bold: 700 0.875rem/1.25rem Roboto; */
+  --transition: color 0.1s, background-color 0.7s ease-in-out ;
+}
+html{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.body {
+  font: var(--body1-regular);
+  color: var(--white);
+  background-color: var(--blueMain);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
